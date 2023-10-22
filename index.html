@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=.3">
+<meta name="author" content="Limuel Ganal Jr.">
+<title>BIODATA Form - Limuel</title>
+<link rel="stylesheet" href="limuel.css"/>
+</head>
+<body>
+			
+ <div  class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()" >
+     ×</div>
+    
+<h1>BIO-DATA</h1> 
+<br>
+  <form action="biodata_process.php" method="POST" enctype="multipart/form-data">	
+  				<label class="picture" for="picture__input" >
+  <span class="picture__image"></span>
+</label>
+
+<input type="file" name="piktyur__input" id="picture__input" accept="image/*" required>
+    
+      				<button class="second-button" disabled>PERSONAL DETAILS</button>
+  <div class="input-field">
+  				<h4 >Position Desired:</h4>
+  				<input name="position_desired" type="text" class="textbox" required>
+  				<h4>Date:</h4>
+  <input type="date" name="date" class="textbox" required>
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Name:</h4>
+  				<input name="name" type="text" class="textbox" required>
+  				<h4>Age:</h4>
+  <input name="age" type="number" class="textbox" required>
+  </div>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;"  >City Address:</h4>
+  				<input name="city" style="width:400px;" type="text" class="textbox" required>
+  				
+  </div>
+  <br>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Provincial Address:</h4>
+  				<input name="province" style="width:400px;" type="text" class="textbox" required>
+  				
+  </div>
+  <div class="input-field">
+  				<h4 >Telephone:</h4>
+  				<input type="tel" class="textbox" name="telephone" required>
+  				<h4>Cellphone:</h4>
+  <input type="number" class="textbox" name="cellphone" required>
+  </div>
+  <br>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Email Address:</h4>
+  				<input style="width:400px;" type="email" class="textbox" name="email_address" required>
+  				
+  </div>
+  
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Date of Birth:</h4>
+  				<input style="width:400px;" type="date" class="textbox" name="dateofbirth" required>
+  				
+  </div>
+  
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Place of Birth:</h4>
+  				<input style="width:400px;" type="text" class="textbox" name="placeofbirth" required>
+  				
+  </div>
+  
+  <div class="input-field">
+  				<h4 >Civil Status:</h4>
+  				<input type="text" class="textbox" name="civilstatus" required>
+  				<h4>Citizenship:</h4>
+  <input type="text" class="textbox" name="citizenship" required>
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Height:</h4>
+  				<input type="text" class="textbox" name="height" required>
+  				<h4>Weight:</h4>
+  <input type="text" class="textbox" name="weight" required>
+  </div>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Religion:</h4>
+  				<input style="width:400px;" type="text" class="textbox" name="religion" required>
+  				
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Spouse:</h4>
+  				<input type="text" class="textbox" name="spouse" required>
+  				<h4>Occupation:</h4>
+  <input type="text" class="textbox" name="spouse_occupation" required>
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Name of Children:</h4>
+  				<input type="text" class="textbox" name="nameofchildren1" >
+  				<h4>Date of Birth:</h4>
+  <input type="date" class="textbox" name="child1dob">
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 ></h4>
+  				<input type="text" class="textbox" name="nameofchildren2">
+  				<h4></h4>
+  <input type="date" class="textbox" name="child2dob">
+  </div>
+  <div class="input-field">
+  				<h4 ></h4>
+  				<input type="text" class="textbox" name="nameofchildren3">
+  				<h4></h4>
+  <input type="date" class="textbox" name="child3dob">
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Father's Name:</h4>
+  				<input type="text" class="textbox" name="fathersname" required>
+  				<h4>Occupation:</h4>
+  <input type="text" class="textbox" name="father_occupation" required>
+  </div>
+  <div class="input-field">
+  				<h4 >Mother's Name:</h4>
+  				<input type="text" class="textbox" name="mothersname" required>
+  				<h4>Occupation:</h4>
+  <input type="text" class="textbox" name="mother_occupation" required>
+  </div>
+  <br>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:400px; margin-left:300px;" >Language or dialect spoken and written:</h4>
+  				<input style="width:400px;" type="text" class="textbox" name="language_dialect" required>
+  				
+  </div>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:430px; margin-left:345px;">Person to be contacted in case of emergency:</h4>
+  				<input style="width:400px;" type="text" class="textbox" name="person_emergency" required>
+  				
+  </div>
+  <br>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:400px; margin-left:300px;" >His or her address and telephone:</h4>
+  				<input style="width:400px;" type="text" class="textbox" name="add_tel_emergency" required>
+  				
+  </div>
+  
+<br><br>
+  
+  <button class="second-button" disabled>EDUCATIONAL BACKGROUND</button>
+  <div class="input-field">
+  				<h4 >Elementary:</h4>
+  				<input type="textbox" class="textbox">
+  				<h4>Year Graduated:</h4>
+  <input type="number" class="textbox">
+  </div>
+  <br>
+   <div class="input-field">
+  				<h4 >High School:</h4>
+  				<input type="textbox" class="textbox">
+  				<h4>Year Graduated:</h4>
+  <input type="number" class="textbox">
+  </div>
+  <br>
+   <div class="input-field">
+  				<h4 >College:</h4>
+  				<input type="textbox" class="textbox">
+  				<h4>Year Graduated:</h4>
+  <input type="number" class="textbox">
+  </div>
+  <br>
+   <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Degree Received:</h4>
+  				<input style="width:400px;" type="text" class="textbox">
+  				
+  </div>
+   <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Special Skills:</h4>
+  				<input style="width:400px;" type="text" class="textbox">
+  				
+  </div>
+  
+  <br><br>
+  
+  <button class="second-button" disabled>EMPLOYMENT RECORD </button>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Company:</h4>
+  				<input style="width:400px;" type="text" class="textbox">
+  				
+  </div>
+  
+  <div class="input-field">
+  				<h4 style="margin-left:-70px;">Position:</h4>
+  				<input style="width:200px; margin-left:-30px;" type="text" class="textbox">
+  				<h4 style="margin-left:-70px;">From:</h4>
+  <input style="width:110px; margin-left:-30px;" type="date" class="textbox">
+  	<h4 style="margin-left:-70px;">To:</h4>
+  <input style="width:110px; margin-left:-30px;" type="date" class="textbox">
+  </div>
+  <br>
+  <div style="margin-left:-400px;" class="input-field">
+  				<h4 style="width:300px; margin-left:169px;" >Company:</h4>
+  				<input style="width:400px;" type="text" class="textbox">
+  				
+  </div>
+  
+  <div class="input-field">
+  				<h4 style="margin-left:-70px;">Position:</h4>
+  				<input style="width:200px; margin-left:-30px;" type="text" class="textbox">
+  				<h4 style="margin-left:-70px;">From:</h4>
+  <input style="width:110px; margin-left:-30px;" type="date" class="textbox">
+  	<h4 style="margin-left:-70px;">To:</h4>
+  <input style="width:110px; margin-left:-30px;" type="date" class="textbox">
+  </div>
+  
+  
+  <br><br>
+  
+  <button class="second-button" disabled>CHARACTER REFERENCE</button>
+  <div class="input-field">
+  				<h4 >Name:</h4>
+  				<input type="text" class="textbox">
+  				<h4>Company:</h4>
+  <input type="text" class="textbox">
+  </div>
+  <div class="input-field">
+  				<h4 >Position:</h4>
+  				<input type="text" class="textbox">
+  				<h4>Contact:</h4>
+  <input type="number" class="textbox">
+  </div>
+  <br>
+  <div class="input-field">
+  				<h4 >Name:</h4>
+  				<input type="text" class="textbox">
+  				<h4>Company:</h4>
+  <input type="text" class="textbox">
+  </div>
+  <div class="input-field">
+  				<h4 >Position:</h4>
+  				<input type="text" class="textbox">
+  				<h4>Contact:</h4>
+  <input type="number" class="textbox">
+  </div>
+  
+  <br><br>
+  
+  <button class="second-button" disabled></button>
+  <div class="input-field2">
+  				<h4 >Res/Cert No.:</h4>
+  				<input type="number" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >Issue at:</h4>
+  				<input type="text" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >Issue on:</h4>
+  				<input type="date" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >SSS:</h4>
+  				<input type="number" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >TIN:</h4>
+  				<input type="number" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >NBI No.:</h4>
+  				<input type="number" class="textbox">
+  				
+  </div>
+    <div class="input-field2">
+  				<h4 >Passport No.:</h4>
+  				<input type="number" class="textbox">
+  				
+  </div>
+  <div class="container">
+											
+															<p>I here certify that the above information is true and correct to the  best of my <br> knowledge and belief. I also understand at any misinterpretation be considered <br>reason for widrawal of an offer or<br> subsequent dismissal if employed.</p><br><br><br>
+														
+															<label class="signature" for="signature__input" >
+  <span class="signature__image"></span>
+</label>
+
+<input type="file" name="perma__input" id="signature__input" accept="image/*">
+
+<h3 style="margin-top:14px;">Applicant's Signature</h3>
+    </div>
+  <br><br>
+  
+  
+  <br>
+    <button style="width:400px;" name="submit" class="second-button">Submit</button>
+    
+    
+   </div>
+    </form>
+  </div>
+  
+  <buttovn onclick="togglePopup()" class="first-button" name="popup">Show Biodata</buttvon>
+
+
+</body>
+<script src="limuel.js"></script>
+</html> 
