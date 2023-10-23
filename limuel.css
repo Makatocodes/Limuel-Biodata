@@ -78,13 +78,23 @@ a {
 {
   box-shadow: inset 5px 5px 5px #7015ff, 
               inset -5px -5px 5px #7015ff;
+                  background: url('fire.gif');           
+  background-blend-mode: multiply;
+  background-color: #3b00ff;
   
+  background-position: center;
+  background-size: cover;
 }
 .input-field2 .textbox:focus
 {
   box-shadow: inset 5px 5px 5px #7015ff, 
               inset -5px -5px 5px #7015ff;
+               background: url('fire.gif');           
+  background-blend-mode: multiply;
+  background-color: #3b00ff;
   
+  background-position: center;
+  background-size: cover;
 }
 .input-field .textbox {
 padding: 20px;
